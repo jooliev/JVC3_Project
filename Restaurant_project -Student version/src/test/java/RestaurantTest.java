@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RestaurantTest {
     Restaurant restaurant;
-    List<Item> spoof = new ArrayList<Item>();
+
 
     public void create_restaurant(){
         LocalTime openingTime = LocalTime.parse("10:30:00");
@@ -57,6 +57,19 @@ class RestaurantTest {
         create_restaurant();
         assertThrows(itemNotFoundException.class,
                 ()->restaurant.removeFromMenu("French fries"));
+    }
+
+    @Test
+    public void when_item_added_order_total_greater_than_zero() {
+
+    }
+    @Test
+    public void when_item_not_added_order_total_equals_zero() {
+    }
+
+    @Test
+    public void adding_items_Amelie_cafe_order_total_equals_388(){
+
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
