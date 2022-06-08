@@ -46,7 +46,7 @@ public class Restaurant {
 
     }
 
-    private Item findItemByName(String itemName){
+    public Item findItemByName(String itemName){
         for(Item item: menu) {
             if(item.getName().equals(itemName))
                 return item;
@@ -67,12 +67,28 @@ public class Restaurant {
 
         menu.remove(itemToBeRemoved);
     }
+
+    public int getSelectedItemPrice(List<String> selectedItems) {
+        int price = 0;
+        for(String item: selectedItems) {
+            price += findItemByName(item).getPrice();
+        }
+        return price;
+    }
+    public int getTotalPrice() {
+        int amount = 0;
+        for(Item item: menu) {
+            amount += item.getPrice();
+        }
+        return amount;
+    }
     public void displayDetails(){
         System.out.println("Restaurant:"+ name + "\n"
                 +"Location:"+ location + "\n"
                 +"Opening time:"+ openingTime +"\n"
                 +"Closing time:"+ closingTime +"\n"
                 +"Menu:"+"\n"+getMenu());
+
 
     }
 

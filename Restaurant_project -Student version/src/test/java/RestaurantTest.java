@@ -1,8 +1,9 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+import org.mockito.Mockito;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -61,14 +62,14 @@ class RestaurantTest {
 
     @Test
     public void when_item_added_order_total_greater_than_zero() {
-
-    }
+         }
     @Test
     public void when_item_not_added_order_total_equals_zero() {
+
     }
 
     @Test
-    public void adding_items_Amelie_cafe_order_total_equals_388(){
+    public void when_item_added_not_available_in_restaurant_list_than_it_throws_exception() throws itemNotFoundException{
 
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
