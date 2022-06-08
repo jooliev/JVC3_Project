@@ -69,7 +69,7 @@ class RestaurantTest {
     }
 
     @Test
-    public void when_item_added_not_available_in_restaurant_list_than_it_throws_exception() throws itemNotFoundException{
+    public void when_item_added_not_available_in_restaurant_list() throws itemNotFoundException{
 
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -75,13 +75,6 @@ public class Restaurant {
         }
         return price;
     }
-    public int getTotalPrice() {
-        int amount = 0;
-        for(Item item: menu) {
-            amount += item.getPrice();
-        }
-        return amount;
-    }
     public void displayDetails(){
         System.out.println("Restaurant:"+ name + "\n"
                 +"Location:"+ location + "\n"
