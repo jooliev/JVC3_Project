@@ -68,13 +68,7 @@ public class Restaurant {
         menu.remove(itemToBeRemoved);
     }
 
-    public int getSelectedItemPrice(List<String> selectedItems) {
-        int price = 0;
-        for(String item: selectedItems) {
-            price += findItemByName(item).getPrice();
-        }
-        return price;
-    }
+
     public void displayDetails(){
         System.out.println("Restaurant:"+ name + "\n"
                 +"Location:"+ location + "\n"
